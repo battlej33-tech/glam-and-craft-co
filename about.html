@@ -1,17 +1,98 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#170f15"><title>About Us | GLAM & CRAFT CO.</title><meta name="description" content="GLAM & CRAFT CO. — nail designs with a little glam and a lot of you."><link rel="stylesheet" href="styles.css"></head><body>
-<div class="promo">✦ A little glam, a lot of you ✦ <span class="script">♡</span></div>
-<header><nav class="nav">
-<a class="logo" href="index.html">GLAM & CRAFT CO.<span>NAILS • STYLE • CREATIVITY</span></a>
-<button class="menu-toggle" aria-label="Open menu">☰</button>
-<div class="navlinks">
-<a href="index.html">Home</a><a href="index.html#collections">Shop Nails</a><a href="index.html#collections">Nail Collections</a><a href="custom-orders.html">Custom Orders</a><a href="about.html">About Us</a><a href="index.html#collections">Gallery</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact Us</a>
-</div>
-<div class="navtools"><button class="iconbtn" id="themeToggle" aria-label="Toggle dark mode">☾</button><a class="iconbtn" href="custom-orders.html" aria-label="Shopping bag">♡</a></div>
-</nav></header>
-<main><section class="page-hero"><div class="script">A little story, a lot of creativity</div><h1>About GLAM & CRAFT CO.</h1><p>Creative details, personal style, and a love for making things feel special.</p></section><section class="section"><div class="info-card"><h2>Our Story</h2><p>GLAM & CRAFT CO. is a growing creative nail brand built around self-expression, playful design, and thoughtful details. From soft and simple to bold pink leopard glam, every collection is a chance to show your style.</p><p>This section can be personalized with your own business story when you're ready.</p></div></section></main>
-<footer class="footer"><div class="leopard-band"></div><div class="footer-inner">
-<div><div class="logo">GLAM & CRAFT CO.<span>Dream it • Design it • Wear it</span></div><small>Pink leopard energy with a polished little sparkle.</small></div>
-<div class="footer-links"><a href="faq.html">FAQs</a><a href="care.html">Nail Care</a><a href="shipping-returns.html">Shipping & Returns</a><a href="contact.html">Contact</a></div>
-<small>© <span data-year></span> GLAM & CRAFT CO. All rights reserved.</small></div></footer>
-<button class="top-button" aria-label="Back to top">↑</button><span class="sparkle one">✦</span><span class="sparkle two">✧</span><script src="script.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the story, creativity, and family behind GLAM & CRAFT CO., a Black family-run press-on nail brand.">
+  <title>Our Story | GLAM &amp; CRAFT CO.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --gc-pink: #f5c4d5;
+      --gc-deep-pink: #b85f80;
+      --gc-cream: #fffaf5;
+      --gc-gold: #bd9854;
+      --gc-ink: #30252a;
+    }
+    body { background: var(--gc-cream); color: var(--gc-ink); }
+    .about-page { max-width: 1080px; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+    .about-hero { text-align: center; padding: 4rem 1.25rem; border-radius: 28px; background: linear-gradient(135deg, #fff4f7, #fffaf5 58%, #f8e6d4); border: 1px solid #efd9d7; }
+    .about-eyebrow { color: var(--gc-deep-pink); letter-spacing: .18em; text-transform: uppercase; font-size: .75rem; font-weight: 700; }
+    .about-hero h1, .about-section h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; }
+    .about-hero h1 { font-size: clamp(2.5rem, 7vw, 4.8rem); margin: .8rem 0 1rem; line-height: 1.05; }
+    .about-hero p { max-width: 650px; margin: 0 auto; font-size: 1.08rem; line-height: 1.8; }
+    .about-sparkle { color: var(--gc-gold); }
+    .about-section { max-width: 800px; margin: 3.5rem auto; }
+    .about-section h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); margin: 0 0 1rem; }
+    .about-section p { line-height: 1.9; font-size: 1.02rem; }
+    .meaning-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; }
+    .meaning-card { padding: 1.5rem; border-radius: 20px; background: #fff; border: 1px solid #f0dce1; box-shadow: 0 8px 24px rgba(80, 40, 55, .05); }
+    .meaning-card h3 { margin: 0 0 .65rem; color: var(--gc-deep-pink); font-family: Georgia, 'Times New Roman', serif; font-size: 1.45rem; }
+    .meaning-card p { margin: 0; font-size: .96rem; line-height: 1.7; }
+    .about-note { margin-top: 3rem; padding: 2rem; border-left: 4px solid var(--gc-gold); border-radius: 0 18px 18px 0; background: #fff; }
+    .about-note p { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 1.25rem; line-height: 1.7; }
+    .about-cta { text-align: center; margin: 3.5rem auto 0; padding: 2.5rem 1.25rem; border-radius: 24px; background: #f8e5ec; }
+    .about-cta h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 2rem; font-weight: 500; margin: 0 0 .75rem; }
+    .about-cta p { line-height: 1.7; }
+    .about-cta a { display: inline-block; margin-top: .6rem; padding: .85rem 1.35rem; border-radius: 999px; background: var(--gc-ink); color: white; text-decoration: none; font-weight: 700; }
+    @media (max-width: 700px) { .meaning-grid { grid-template-columns: 1fr; } .about-page { padding-top: 1.5rem; } .about-hero { padding: 3rem 1.1rem; } }
+  </style>
+</head>
+<body>
+  <main class="about-page">
+    <section class="about-hero">
+      <div class="about-eyebrow">A little glam, a lot of heart <span class="about-sparkle">✧</span></div>
+      <h1>Our Story</h1>
+      <p>Creativity, confidence, and family are at the heart of GLAM &amp; CRAFT CO. Every set is a chance to show a little more of who you are.</p>
+    </section>
+
+    <section class="about-section">
+      <h2>How It All Started</h2>
+      <p>My love for nails, crafts, and creativity started when I was very young. Doing my own nails was something I genuinely enjoyed, and as people began noticing my designs and asking me to do their nails, I started to see a possibility: maybe a hobby I loved could grow into something of my own.</p>
+      <p>Around the ages of 10–12, the idea of starting a press-on nail business began to take shape. I discovered how much I enjoyed creating sets and bringing ideas to life. That little idea became the beginning of GLAM &amp; CRAFT CO.</p>
+      <p>I'm also inspired by my mom, who is a lawyer and leads her own company. Watching her work with confidence, organization, and attention to detail encouraged me to build something of my own. I wanted my business to bring together creativity and professionalism.</p>
+    </section>
+
+    <section class="about-section">
+      <h2>More Than Just Nails</h2>
+      <p>To me, nails are wearable art. A design can celebrate a holiday, match a mood, show off a favorite color, or add a little sparkle to an ordinary day. I love that you can carry your creativity with you and let your hands make a statement.</p>
+      <p>My hope is that every customer feels extra, confident, and special when wearing their nails. Whether you choose a ready-to-love design or dream up something custom, I want your set to feel like you.</p>
+    </section>
+
+    <section class="about-section">
+      <h2>The Meaning Behind the Brand</h2>
+      <p>Every part of our name has a little meaning behind it:</p>
+      <div class="meaning-grid">
+        <article class="meaning-card">
+          <h3>GLAM</h3>
+          <p>The sparkle, confidence, and special feeling that comes with expressing your own style.</p>
+        </article>
+        <article class="meaning-card">
+          <h3>&amp; CRAFT</h3>
+          <p>The creativity, care, and hands-on artistry that go into dreaming up each nail design.</p>
+        </article>
+        <article class="meaning-card">
+          <h3>CO.</h3>
+          <p>Community, family, and the people who make this journey meaningful. It's a reminder that this brand is built with love and support.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>Family, Pride &amp; Big Dreams</h2>
+      <p>GLAM &amp; CRAFT CO. is a Black family-run business built around creativity, ambition, and family pride. One of my biggest goals is to keep learning, grow this business, make my family proud, and show that a small idea can become something meaningful with care and determination.</p>
+      <div class="about-note">
+        <p>Thank you for supporting this creative journey and letting GLAM &amp; CRAFT CO. add a little extra glam to your life. <span class="about-sparkle">✧</span></p>
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <h2>Ready to find your next set?</h2>
+      <p>Explore the collections or dream up a custom design of your own.</p>
+      <a href="index.html">Explore GLAM &amp; CRAFT CO.</a>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
